@@ -1,0 +1,17 @@
+[user]
+	name = Alek Evans
+	email = github@alekeagle.com
+	signingkey = 97E3195A250EB097E1B2C91D7C0B960782136A20
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
